@@ -1,0 +1,35 @@
+<%= simple_form_for(@employee) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+
+    <%= f.input :name %>
+
+    <%= f.input :cpf %>
+
+    <%= f.input :phone %>
+
+    <%= f.input :email %>
+
+    <%= f.input  :birth_date %> 
+
+    <%= f.input :street %>
+
+    <%= f.input :number_street %>
+
+    <%= f.input :neighborhood %>
+
+    <%= f.input :city %>
+
+    <%= f.input :state, collection: State %>
+
+    <%= f.input :zip_code %>
+
+
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

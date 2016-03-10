@@ -30,6 +30,6 @@ module DanceStudio
     config.time_zone = 'Brasilia'
 #    config.i18n.default_locale = :"pt-BR"
     config.responders.flash_keys = [ :success, :failure ]
-    
+    config.autoload_paths << "#{Rails.root}/app/enumerations"
   end
 end
