@@ -1,0 +1,22 @@
+pt-BR:
+  title:
+  activerecord:
+    models:
+      employee:
+        one: "Funcionário"
+        many: "Funcionários"
+    attributes:
+      employee:
+        name: "Nome"
+        email: 'Email'
+        birth_date: 'Data Nascimento'
+        street: 'Logradouro'
+        number_street: 'N°'
+        neighborhood: 'Bairro'
+        city: 'Cidade'
+        state: 'Estado'
+        phone: 'Telefone'
+        cell_phone: 'Celular'
+        zip_code: 'CEP'
+        cpf: 'CPF'
+        teacher: 'Professor?'

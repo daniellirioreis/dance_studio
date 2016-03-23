@@ -1,0 +1,28 @@
+pt-BR:
+  title:
+  activerecord:
+    models:
+      student:
+        one: "Aluno"
+        many: "Alunos"
+    attributes:
+      student:
+        name: "Nome"
+        email: 'Email'
+        birth_date: 'Data Nascimento'
+        cpf: 'CPF'
+        gender: 'Sexo'
+        profession: 'Profissão'
+        mother: 'Nome da Mãe'
+        father: 'Nome do pai'
+        responsible: 'Responsável'
+        cpf_responsible: 'CPF do Responsável'
+        street: 'Logradouro'
+        number_street: 'N°'
+        neighborhood: 'Bairro'
+        city: 'Cidade'
+        state: 'Estado'
+        phone: 'Telefone'
+        cel_phone: 'Celular'
+        zip_code: 'CEP'
+        rg: 'RG'

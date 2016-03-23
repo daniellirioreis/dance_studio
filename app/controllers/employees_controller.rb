@@ -18,17 +18,18 @@ class EmployeesController < ApplicationController
   end
 
   def edit
+    @employee.birth_date = @employee.birth_date.strftime("%d/%m/%Y")  unless @employee.birth_date.nil?
   end
 
   def create
     @employee = Employee.new(employee_params)
     @employee.save
-    respond_with(@employee)
+    respond_with @employee, :location => employees_path
   end
 
   def update
     @employee.update(employee_params)
-    respond_with(@employee)
+    respond_with @employee, :location => employees_path
   end
 
   def destroy
@@ -42,6 +43,6 @@ class EmployeesController < ApplicationController
     end
 
     def employee_params
-      params.require(:employee).permit(:name, :cpf, :phone, :email, :birth_date, :street, :number_street, :neighborhood, :city, :state, :zip_code)
+      params.require(:employee).permit(:name, :cpf, :phone, :email, :birth_date, :street, :number_street, :neighborhood, :city, :state, :zip_code, :teacher)
     end
 end

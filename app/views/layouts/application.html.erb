@@ -21,13 +21,18 @@
   <body>
     <%= render 'layouts/navegation_bar' %>
     <%= render 'layouts/menu'%>
-    <%= render 'layouts/messages' %>
     <br><br>
-    <div class="jumbotron">
-      <div class="container">
-            <%= yield %>
+    <%= render 'layouts/messages' %>
+    <div class="row">
+      <div class="col-md-1">
+        <%= image_tag  "/images/login1.jpg", :width => 200 %>
       </div>
-    </div>
-    <hr>
+      <div class="col-md-10">
+        <div class="jumbotron">
+          <div class="container">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
   </body>
 <html>

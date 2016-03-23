@@ -1,9 +1,9 @@
 <table class="table">
   <td>
-    <h3>Listagem de Funcionários</h3>
+    <h3>Listagem de Alunos</h3>
   </td>
   <td width='5%'>
-    <%= link_to new_employee_path, role: 'button' do %>
+    <%= link_to new_student_path, role: 'button' do %>
       <h2 class="text-success" title='Novo Aluno'><span class="glyphicon glyphicon-plus"></span></h2>
     <% end %>    
   </td>
@@ -20,26 +20,16 @@
     Nome
   </th>
   <th width="5%">
-    Professor
-  </th>
-  <th width="5%">
   </th>
 </tr>
-  <% if @employees.any?%>
-    <% @employees.each do |e|%>
+  <% if @students.any?%>
+    <% @students.each do |e|%>
       <tr>
         <td>
           <%= e%>
         </td>
-        <td align="center">
-          <% if  e.teacher? %>
-            <span class="glyphicon glyphicon-ok"></span>
-          <%else%>
-            <span class="glyphicon glyphicon-remove"></span>
-          <% end %>
-        </td>
         <td>
-          <%= link_to '', edit_employee_path(e), class: "glyphicon glyphicon-pencil" %>
+          <%= link_to '', edit_student_path(e), class: "glyphicon glyphicon-pencil" %>
           <%= link_to '', e, method: :delete, data:{confirm: 'Confirma exclusão ?'}, class: "glyphicon glyphicon-trash text-danger" %>
         </td>
       </tr>

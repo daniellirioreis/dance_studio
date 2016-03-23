@@ -28,7 +28,7 @@ module DanceStudio
     config.app_generators.scaffold_controller :responders_controller
     
     config.time_zone = 'Brasilia'
-#    config.i18n.default_locale = :"pt-BR"
+    config.i18n.default_locale = :"pt-BR"
     config.responders.flash_keys = [ :success, :failure ]
     config.autoload_paths << "#{Rails.root}/app/enumerations"
   end

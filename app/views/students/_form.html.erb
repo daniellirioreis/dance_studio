@@ -1,4 +1,4 @@
-<%= simple_form_for(@employee) do |f| %>
+<%= simple_form_for(@student) do |f| %>
 
   <div class="tabbable">
     <ul class="nav nav-tabs">
@@ -17,6 +17,6 @@
  
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-success" %>
-    <%= link_to "Voltar", employees_path, class: "btn btn-info"%>
+    <%= link_to "Voltar", students_path, class: "btn btn-info"%>
   </div>
 <% end %>

@@ -1,0 +1,24 @@
+<br>
+<div class="row">
+	<div class="col-md-5">
+		<%= f.input :street %>
+	</div>
+	<div class="col-md-2">	
+		<%= f.input :number_street %>
+	</div>
+	<div class="col-md-3">	
+		<%= f.input :neighborhood %>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-5">
+		<%= f.input :city %>
+	</div>
+	<div class="col-md-2">	
+		<%= f.input :zip_code %>
+	</div>
+	<div class="col-md-1">	
+		<%= f.input :state, collection: State.to_a %>
+	</div>
+</div>
